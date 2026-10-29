@@ -1,0 +1,16 @@
+Study notes: AI agents and RAG
+
+AI agents
+An agent is a system that uses an LLM to decide which actions to take to reach a goal. Agents work in a loop: think, act with a tool, observe the result, and repeat until they can answer. This pattern is called ReAct (reason + act).
+
+Tools
+Tools are functions an agent can call, such as web search, a calculator, or a database lookup. The LLM chooses a tool based on its name and description, so clear docstrings matter.
+
+Memory
+Agents are stateless by default. Keeping a context object between runs lets an agent remember earlier messages.
+
+RAG (retrieval-augmented generation)
+RAG gives an LLM access to your own documents. It has five stages: loading, indexing, storing, querying and evaluation. Documents are split into chunks, converted to vector embeddings, and stored in a vector database. At question time, the most similar chunks are retrieved and passed to the LLM.
+
+Workflows
+A workflow organizes logic into steps connected by events. Steps can branch and loop, which gives more control than a fully autonomous agent.
