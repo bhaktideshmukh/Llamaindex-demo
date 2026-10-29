@@ -1,0 +1,8 @@
+llama-index-core
+llama-index-llms-google-genai
+llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma
+llama-index-utils-workflow
+chromadb
+python-dotenv
+ddgs
